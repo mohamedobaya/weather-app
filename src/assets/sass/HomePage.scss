@@ -1,0 +1,83 @@
+@import './Colors.scss';
+
+.home{
+    background: url(../designs/cloudy-bg.png), $primary-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 2em;
+    width:100%;
+    &-btns{
+        margin-top: 1em;
+        padding: 0 1em;
+        display: flex;
+        justify-content: space-between;
+        .btn{
+            background-color: $button-color-1;
+            color: $text-color-1;
+            border: 0;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 1em;
+            &:hover{
+                opacity: 0.9;
+            }
+            &:focus{
+                outline: none;
+            }
+            &-search{
+                padding: 0.6em 1em;
+            }
+            &-location{
+                padding: 0.6em 1em;
+                border-radius: 50%;
+            }
+            
+        }
+    }
+    &-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .home-weather-icon{
+            display: flex;
+            justify-content: center;
+            margin: 1em auto;
+            text-align: center;
+            
+        }
+        .home-weather-degree{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 8em;
+            font-weight: 500;
+            color: $text-color-1;
+            .unit{
+                color: $text-color-2;
+                font-size: 0.3em;
+            }
+        }
+        .home-weather-status{
+            color: $text-color-2;
+            margin: 1em auto;
+            font-size: 2.3em;
+            font-weight: 600;
+        }
+        .home-weather-calendar{
+            color: $text-color-2;
+            margin: 1em auto;
+            font-size: 1em;
+            font-weight: 600;
+            .calendar-space{
+                padding: 0 0.7em;
+                font-weight: 900;
+            }
+        }
+        .home-weather-location{
+            color: $text-color-2;
+            margin: 1em auto;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+    }
+}
